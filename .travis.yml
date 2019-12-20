@@ -6,6 +6,8 @@ os: osx
 
 before_script:
   - pip install --user cpp-coveralls
+  - export PATH=$HOME/.local/bin:$PATH
+  - echo $PATH
 
 script:
   - mkdir build
